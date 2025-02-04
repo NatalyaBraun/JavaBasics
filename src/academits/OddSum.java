@@ -1,7 +1,7 @@
 package academits;
 import java.util.Scanner;
 
-public class EvenSum {
+public class OddSum {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

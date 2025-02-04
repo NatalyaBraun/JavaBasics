@@ -17,14 +17,14 @@ public class Numbers {
 
         System.out.println("Сумма цифр числа: " + sum);
 
-        int evenSum = 0;
+        int oddSum = 0;
         while (a != 0) {
             if ((a % 10) % 2 != 0) {
-                evenSum += (a % 10);
+                oddSum += (a % 10);
             }
             a /= 10;
         }
-        System.out.println("Сумма нечетных цифр числа: " + evenSum);
+        System.out.println("Сумма нечетных цифр числа: " + oddSum);
 
         int max = 0;
         while (a != 0) {
