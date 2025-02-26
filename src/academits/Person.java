@@ -1,20 +1,18 @@
 package academits;
 
+import java.time.Year;
+
 public class Person {
     private String name;
     private String middleName;
     private String familyName;
     private static int age;
-    private static int currentYear;
-    private static int birthYear;
 
-    public Person(String name, String middleName, String familyName, int age, int currentYear, int birthYear) {
+    public Person(String name, String middleName, String familyName, int age) {
         this.name = name;
         this.middleName = middleName;
         this.familyName = familyName;
         this.age = age;
-        this.currentYear = currentYear;
-        this.birthYear = currentYear - age;
     }
 
     public String getName() {
@@ -58,33 +56,14 @@ public class Person {
         this.age = age;
     }
 
-    public static int getCurrentYear() {
-        return currentYear;
-    }
-
-    public void setYear(int currentYear) {
-        this.currentYear = currentYear;
-    }
+    static int currentYear = Year.now().getValue();
 
     public static int getBirthYear() {
-        return birthYear;
-    }
-
-    public void setBirthYear(int birthYear) {
-        this.birthYear = birthYear;
+        return currentYear - age;
     }
 
     @Override
     public String toString() {
         return "{ " + familyName + " " + name + " " + middleName + " }";
     }
-
-    public void printAge() {
-        System.out.println();
-    }
-
-    public void printBirthYear() {
-        System.out.println();
-    }
 }
-

@@ -10,7 +10,7 @@ public class Numbers {
         int a = scanner.nextInt();
         int sum = 0;
         int oddSum = 0;
-        int max = 0;
+        int max = Integer.MIN_VALUE;
 
         while (a != 0) {
             sum += (a % 10);

@@ -1,20 +1,22 @@
 package academits;
 
-import java.util.Scanner;
-
 public class CycleFor {
     public static void main(String[] args) {
 
         for (int i = 100; i >= 1; i--) {
-            if (i % 4 == 0) {
-                System.out.print(i + " ");
-            }
+            isMultipleFour(i);
         }
-
-        boolean even = isMultipleFour();
     }
 
-    private static boolean isMultipleFour() {
-        return false;
+    private static void isMultipleFour(int i) {
+        if (i % 4 == 0) {
+            System.out.print(i + " ");
+        }
+
+//    public static boolean isMultipleFour(int i) {
+//        if (i % 4 == 0) {
+//            System.out.print(i + " ");
+//        }
+//        return false;
     }
 }

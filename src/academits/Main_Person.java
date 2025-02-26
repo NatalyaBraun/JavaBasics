@@ -10,11 +10,9 @@ public class Main_Person {
         String name = "Наталия";
         String middleName = "Генадьевна ";
         String familyName = "Тимошина";
-        int age = 38;
-        int currentYear = 2025;
-        int birthYear = 0;
+        int age = 39;
 
-        Person person = new Person(name, middleName, familyName, age, currentYear, birthYear);
+        Person person = new Person(name, middleName, familyName, age);
         System.out.println("Первоначальное имя: " + person.getName());
         person.setName("Наталья");
         System.out.println("Первоначальное отчество: " + person.getMiddleName());
@@ -24,6 +22,5 @@ public class Main_Person {
         System.out.println("Возраст: " + age);
         System.out.println("ФИО: " + person);
         System.out.print("Год рождения: " + person.getBirthYear());
-
     }
 }
