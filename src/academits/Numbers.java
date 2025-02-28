@@ -2,17 +2,21 @@ package academits;
 
 import java.util.Scanner;
 
+import static java.lang.Math.abs;
+
 public class Numbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите целое число: ");
         int a = scanner.nextInt();
+        a = abs(a);
         int sum = 0;
         int oddSum = 0;
-        int max = Integer.MIN_VALUE;
+        int max = 0;
 
         while (a != 0) {
+
             sum += (a % 10);
             if ((a % 10) % 2 != 0) {
                 oddSum += (a % 10);

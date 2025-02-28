@@ -56,9 +56,8 @@ public class Person {
         this.age = age;
     }
 
-    static int currentYear = Year.now().getValue();
-
     public static int getBirthYear() {
+        int currentYear = Year.now().getValue();
         return currentYear - age;
     }
 

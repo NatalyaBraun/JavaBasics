@@ -4,19 +4,13 @@ public class CycleFor {
     public static void main(String[] args) {
 
         for (int i = 100; i >= 1; i--) {
-            isMultipleFour(i);
+            if (isMultipleFour(i)) {
+                System.out.print(i + " ");
+            }
         }
     }
 
-    private static void isMultipleFour(int i) {
-        if (i % 4 == 0) {
-            System.out.print(i + " ");
-        }
-
-//    public static boolean isMultipleFour(int i) {
-//        if (i % 4 == 0) {
-//            System.out.print(i + " ");
-//        }
-//        return false;
+    public static boolean isMultipleFour(int i) {
+        return (i % 4 == 0);
     }
 }
